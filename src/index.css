@@ -1,0 +1,117 @@
+body {
+  padding: 0;
+  margin: 0 0 0 0;
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+
+  background: var(--light-background);
+}
+
+:root {
+  /* --- FONT FAMILY --- */
+  --body-font-family: 'Poppins', sans-serif;
+  
+  /* --------------------------------------------------------------------------- */
+  /* --- COLORS --- */
+  --white: white;
+  --white-faded: rgba(255,255,255, .97);
+  --black: black;
+  /* ### Primary */
+  --primary-color: hsl(180, 66%, 49%);
+  --sub-primary-color: hsl(257, 27%, 26%);
+  /* ### Secondary */
+  --secondary-color: hsl(0, 87%, 67%);  
+  /* ### Neutral */
+  --gray: hsl(0, 0%, 75%);
+  --grayish-violet: hsl(257, 7%, 53%);
+  --very-dark-blue: hsl(255, 11%, 22%);
+  --very-dark-violet: hsl(260, 8%, 14%);
+  
+  --light-gray: #eeee;
+  --light-background: #f0f1f6;
+  /* ### Dividers */
+  /* dark backgrounds */
+  --divider: #3E4042;
+  /* for clear backgrounds */
+  --divider2: rgb(170,170,170);
+  /* for section */
+  --divider3: hsl(180, 66%, 69%);
+  --divider4: hsl(257, 27%, 76%);
+
+  /* success and error colors */
+  --success-color: #4BB543;
+  --error-color: #ff0033;
+  
+  /* --------------------------------------------------------------------------- */
+  /* FONT SIZES */
+  --fluid-typography-ratio: .7;
+  
+  --header-base-font-size: 55px;
+  --sub-header-base-font-size: 20px;
+  
+  --h1-base-font-size: 30px;
+  --p-base-font-size: 6px;
+  
+  --h2-base-font-size: 16px;
+  --p2-base-font-size: 4px;
+  
+  --p3-base-font-size: 2px;
+  
+  --header-font-size: calc(var(--header-base-font-size) + var(--fluid-typography-ratio) * 1vw);
+  --sub-header-font-size: calc(var(--sub-header-base-font-size) + var(--fluid-typography-ratio) * 1vw);
+  --h1-font-size: calc(var(--h1-base-font-size) + var(--fluid-typography-ratio) * 1vw);
+  --p-font-size: calc(var(--p-base-font-size) + var(--fluid-typography-ratio) * 1vw);
+  --h2-font-size: calc(var(--h2-base-font-size) + var(--fluid-typography-ratio) * 1vw);
+  --p2-font-size: calc(var(--p2-base-font-size) + var(--fluid-typography-ratio) * 1vw);
+
+  --p3-font-size: calc(var(--p3-base-font-size) + var(--fluid-typography-ratio) * 1vw);
+  /* --------------------------------------------------------------------------- */
+  /* FONT WEIGHT */
+  --medium-font-weight: 500;
+  --bold-font-weight: 700;
+  /* bold only for header */
+  --extra-bold-font-weight: 800;
+  
+  /* --------------------------------------------------------------------------- */
+  /* LINE HEIGHTS */
+  --header-line-height: 1;
+  --sub-header-line-height: 1.2;
+  --h1-line-height: 1.2;
+  --h2-line-height: 1.2;
+  --p-line-height: 1.5;
+  --p2-line-height: 1.5;
+  
+  /* --------------------------------------------------------------------------- */
+  /* MAX WIDTH */
+  --max-width-deskopt: 1300px;
+  
+  /* --------------------------------------------------------------------------- */
+  /* bOX SHADOWINGS */
+  --box-shadow0: 0 0 2px var(--black);
+  --box-shadow1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --box-shadow2: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  --box-shadow3: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  --box-shadow4: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  --box-shadow5: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  
+  /* --------------------------------------------------------------------------- */
+  /* NAVBAR HEIGHT ???? */
+  --navbar-height: 55px;
+  
+}
+
+@media (max-width: 1200px) {
+  :root {
+    /* FONT SIZES */
+    --fluid-typography-ratio: 1.4;
+  }
+}
+@media (max-width: 800px) {
+  :root {
+    /* FONT SIZES */
+    --fluid-typography-ratio: 2;
+  }
+}

@@ -1,0 +1,122 @@
+.proyectsContainer {
+    margin-top: 50px;
+}
+.proyectsContainer > .cardContaier:not(:first-child) {
+    margin-top: 50px;
+}
+.proyectsContainer > .cardContaier:nth-child(even) {
+    grid-template-areas: 'text img';
+}
+.proyectsContainer > .cardContaier:nth-child(odd) {
+    grid-template-areas: 'img text';
+}
+.cardContaier {
+    position: relative;
+    min-height: 320px;
+    box-sizing: border-box;
+    background: var(--white);
+    box-shadow: var(--box-shadow1);
+    
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 24px; */
+    /* padding: 12px; */
+    border-radius: 4px;
+}
+
+.imgContainer {
+    position: relative;
+    max-height: 385px;
+    max-width: 650px;
+
+
+    grid-area: img;
+}
+
+.imgContainer > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.imgContainerMobile {
+    position: absolute;
+    height: 340px;
+    width: auto;
+    right: -20px;
+    bottom: -40px;
+}
+.imgContainerMobile > img {
+    height: 100%;
+}
+
+.textContent {
+    padding: 30px;
+    grid-area: text;
+
+    display: flex;
+    flex-direction: column;
+}
+.textContent > h2 {
+    position: relative;
+    text-transform: capitalize;
+}
+.textContent > h2::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    right: 0;
+    width: 20%;
+    height: 3px;
+    background: var(--primary-color);
+}
+.textContent > h2, .textContent > p {
+    justify-self: start;
+    margin-bottom: 15px;
+}
+.textContent > p > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 30px;
+}
+.links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: auto;
+
+}
+.textContent .links > a {
+    font-size: var(--p-font-size);
+    color: var(--sub-primary-color);
+    text-decoration: none;
+}
+.textContent .links > a:hover {
+    text-decoration: underline !important;
+}
+
+@media (max-width: 800px) {
+    .cardContaier {
+        display: flex;
+        flex-direction: column;
+    }
+    .imgContainerMobile {
+        position: absolute;
+        height: 200px;
+        width: auto;
+        right: -20px;
+        bottom: -35px;
+    }
+
+    .textContent > p > ul {
+        text-align: center;
+    }
+    .textContent > h2::after {
+        margin: 0 auto;
+    }
+
+    .textContent .links > a {
+        text-align: center;
+    }
+}

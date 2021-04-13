@@ -1,0 +1,42 @@
+.mainWrapper {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    text-transform: capitalize;
+    font-size: var(--p2-font-size);
+}
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    border-radius: 4px;
+    outline: none;
+    border: none;
+
+    font-size: var(--p2-font-size);
+    font-family: var(--body-font-family);
+
+    padding: 7px;
+    border: 1px solid var(--divider2);
+    
+    text-transform: capitalize;
+    transition: all 200ms ease;
+    
+    resize: none;
+}
+input:focus, textarea:focus {
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 4px var(--primary-color);
+}
+
+.errorMessage {
+    font-size: var(--p3-font-size);
+    color: var(--error-color);
+
+    margin-right: auto;
+
+    min-height: 20px;
+
+    /* visibility: hidden; */
+}

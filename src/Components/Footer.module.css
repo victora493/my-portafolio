@@ -1,0 +1,132 @@
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+a:visited {
+    color: var(--light-text-color);
+}
+
+.wrapper {
+    background: var(--very-dark-violet);
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  max-width: var(--max-width-deskopt);
+  margin: 0 auto;
+}
+
+/* LOGO SECTION */
+.logoSection {
+    max-width: 400px;
+}
+.logoSection > p {
+    font-size: var(--p2-font-size);
+    /* color: var(--light-text-color);
+    opacity: .5; */
+
+    margin-top: 16px;
+}
+.logoContainer {
+    height: 50px;
+}
+.logoContainer img {
+    height: 100%;
+}
+
+/* CONTACT SECTION */
+.contactInfoContainer {
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+}
+.contactInfoContainer > .footerTitle {
+  color: var(--white);
+  font-size: var(--p-font-size);
+  margin-bottom: 16px;
+}
+.contactInfoContainer a:not(:nth-child(3)) {
+  margin-top: 12px;
+}
+.contactInfoContainer a p {
+    font-size: var(--p2-font-size);
+    font-weight: var(--medium-font-weight);
+    color: inherit;
+    
+    display: flex;
+    align-items: center;
+}
+.contactInfoContainer svg, .contactInfoContainer a p > span {
+    margin-right: 5px;
+    color: var(--secondary-accent-color);
+}
+.contactInfoContainer a p > span {
+    font-size: var(--p2-font-size);
+}
+.contactInfoContainer a p:hover {
+  color: var(--primary-color);
+}
+.noHover {
+    pointer-events: none !important;
+}
+
+/* SOCIALS SECTION */
+.socialsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.singleIconContainer {
+  display: grid;
+  place-items: center;
+}
+.singleIconContainer:not(:last-child) {
+  margin-right: 20px;
+}
+
+.singleIconContainer a svg {
+  font-size: 2.5rem;
+  color: var(--white);
+}
+.singleIconContainer a svg:hover {
+  color: var(--primary-color);
+}
+
+@media (max-width: 800px) {
+  .decorationCircle {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: var(--white);
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .footerContainer {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logoContainer {
+    margin-right: 0;
+  }
+
+  .contactInfoContainer {
+    justify-content: center;
+    align-items: center;
+    text-align: inherit;
+    margin-bottom: 40px;
+  }
+
+}
