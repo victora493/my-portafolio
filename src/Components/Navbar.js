@@ -88,7 +88,7 @@ export default function Navbar() {
                 </ul>
             </nav>
             
-            {/* <section className={showMenu && styles.showDrawer}>
+            <section className={showMenu && styles.showDrawer}>
                 <ul className={styles.drawerMenuContainer}>
                     <Link
                         activeClass={styles.drawerActive}
@@ -136,7 +136,7 @@ export default function Navbar() {
                         <IoClose />
                     </div>
                 </ul>
-            </section> */}
+            </section>
         </>
     )
 }
