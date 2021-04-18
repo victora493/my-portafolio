@@ -15,7 +15,7 @@ export default function Projects() {
             imgMobile: pr1MobileMockup,
             title: 'Online Art School',
             desc: {
-                mainDesc: 'This website is an online art school. It was made with a team of progammers and a designer. I was in charge in almost all the front end and a lot of the logic of the page.',
+                mainDesc: 'This website was made with a team of developers and I was in charge of the front end. It was an interesting project since i developed a lot of skills undestanding what is needed for a full stack webpage, and also I learned how to work better as a team.',
                 skills: ['html, css', 'Javascript', 'Lit element', 'Firebase', 'NodeJS']
             },
             links: ['https://mfa.studio/']
@@ -23,9 +23,9 @@ export default function Projects() {
         {
             imgDesk: pr2DeskoptMockup,
             imgMobile: pr2MobileMockup,
-            title: 'Online Art Conference',
+            title: 'Online Art Live Conference',
             desc: {
-                mainDesc: 'This website was made to host an art Conference for one of our clients. It was made with a team and I designed and coded the front end and a lot of the logic of the page.',
+                mainDesc: "This website was made with a team of developers and I was in charge of the front end. This project was exciting because this website design was made by me using my experience creating both good and efficient UI/UX.",
                 skills: ['html, css', 'Javascript', 'React', 'Firebase', 'NodeJS']
             },
             links: ['https://art-of-the-portrait.netlify.app/']
