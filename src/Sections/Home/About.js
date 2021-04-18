@@ -24,7 +24,7 @@ export default function About() {
                         I'm a Web Developer, I can design, create and maintain websites, using the latest industry software.
                         I've worked with startups and institutions providing an outstanding user experience.
                         <br /> 
-                        I'm 22 years old and currently located in Mexico. <br />
+                        {/* I'm 22 years old and currently located in Mexico. <br /> */}
                         I'd say developing has become my passion throughout this time and the more 
                         challenging a website the more I enjoy developing that website. <br />
                         Some of the technologies I dominate include:
