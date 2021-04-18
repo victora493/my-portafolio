@@ -12,7 +12,7 @@ export default function Hero() {
         <div className={styles.mainWrapper}>
             <div className={styles.heroWrapper + ' ' + 'max-width'}>
                 <div className={styles.textContainer}>
-                    <h1 className='header' >Hello, my name is Victor <span className='cyan'>.</span></h1>
+                    <h1 className='header' >Hello, my name is Victor<span className='cyan'>.</span></h1>
                     <p className='sub-header' >
                         I'm a frontend developer from <span className='green'>Me</span>xi<span className='red' >co</span>,
                         and building websites is my passion.

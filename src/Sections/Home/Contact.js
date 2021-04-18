@@ -10,7 +10,7 @@ import Button from '../../Components/UI/Button'
 import Textarea from '../../Components/UI/Textarea'
 
 // icons
-import { IoMailOutline, IoCallOutline } from 'react-icons/io5'
+import { IoMailOutline, IoLogoWhatsapp } from 'react-icons/io5'
 
 export default function Contact() {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
@@ -55,8 +55,8 @@ export default function Contact() {
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" href="tel:+526861142588">
-                                    <IoCallOutline/>
+                                <a target="_blank" href="https://api.whatsapp.com/send?phone=526861142588&text=Hello!%20I'd%20like%20to%20tell%20you%20about%20my%20project">
+                                    <IoLogoWhatsapp/>
                                     +52 (686) 1142588
                                 </a>
                             </li>

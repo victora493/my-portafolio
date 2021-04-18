@@ -72,11 +72,11 @@
     height: 3px;
     background: var(--primary-color);
 }
-.textContent > h2, .textContent > p {
+.textContent > h2, .technologiesList {
     justify-self: start;
     margin-bottom: 15px;
 }
-.textContent > p > ul {
+.technologiesList {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-left: 30px;

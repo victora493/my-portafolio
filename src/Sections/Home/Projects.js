@@ -64,12 +64,14 @@ export default function Projects() {
                                     {pr && pr.desc.mainDesc || 'no description'}
                                     <br />
                                     <strong>Technologies used:</strong>
-                                    <ul>
-                                        {pr && pr.desc && pr.desc.skills.map((skill, i) => (
-                                            <li key={i * 20}>{skill}</li>
-                                        ))}
-                                    </ul>
                                 </p>
+                                <ul className={styles.technologiesList}>
+                                    {pr && pr.desc && pr.desc.skills.map((skill, i) => (
+                                        <p>
+                                            <li key={i * 20}>{skill}</li>
+                                        </p>
+                                    ))}
+                                </ul>
                                 <div className={styles.links}>
                                 {pr && pr.links.map((link, i) => (
                                     <a key={i * 3} target='_blank' href={link}>

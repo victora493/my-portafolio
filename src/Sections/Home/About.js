@@ -20,7 +20,9 @@ export default function About() {
                 <div className={styles.textContainer}>
                     <h1>A little bit about me <span className='cyan' >.</span></h1>
                     <p>
-                        I'm a Web Developer, I've worked with startups and institutions giving my best to deliver the best web pages.
+
+                        I'm a Web Developer, I can design, create and maintain websites, using the latest industry software.
+                        I've worked with startups and institutions providing an outstanding user experience.
                         <br /> 
                         I'm 22 years old and currently located in Mexico. <br />
                         I'd say developing has become my passion throughout this time and the more 

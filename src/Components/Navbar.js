@@ -36,7 +36,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className={!isNavbarTop ? styles.navActive : ''}>
+            <nav className={!isNavbarTop && styles.navActive}>
                 <ul className={styles.menuContainer}>
                     <div className={styles.logoContainer} onClick={scrollToTop}>
                         <img src={myLogo} alt="logo" />
@@ -87,7 +87,8 @@ export default function Navbar() {
                     </div>
                 </ul>
             </nav>
-            <drawer className={showMenu && styles.showDrawer}>
+            
+            {/* <section className={showMenu && styles.showDrawer}>
                 <ul className={styles.drawerMenuContainer}>
                     <Link
                         activeClass={styles.drawerActive}
@@ -126,7 +127,7 @@ export default function Navbar() {
                         className={styles.nightMode}
                         onClick={() => setShowMenu(false)}
                     >
-                        {/* Night mode */}
+                        Night mode
                     </div>
                     <div
                         className={styles.menuIcon}
@@ -135,7 +136,7 @@ export default function Navbar() {
                         <IoClose />
                     </div>
                 </ul>
-            </drawer>
+            </section> */}
         </>
     )
 }

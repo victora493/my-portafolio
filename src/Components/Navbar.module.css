@@ -5,7 +5,7 @@ ul {
 .menuIcon {
     display: none;
 }
-drawer {
+section {
     display: none;
 }
 nav {
@@ -48,6 +48,8 @@ nav {
     cursor: pointer;
     transition: color 300ms ease;
     padding: 10px;
+
+    text-transform: capitalize;
 }
 .menuContainer > *:hover {
     color: var(--very-dark-violet);
@@ -98,7 +100,7 @@ nav {
         display: none;
     }
     /* drawe styles */
-    drawer {
+    section {
         display: inherit;
         position: fixed;
         z-index: 11;
@@ -114,16 +116,16 @@ nav {
         left: 0;
     }
     
-    drawer .menuIcon {
+    section .menuIcon {
         position: absolute;
         top: 0;
         right: 2%;
         color: var(--light-background);
     }
-    drawer .menuIcon:hover, .drawerMenuContainer > a:hover, .nightMode:hover  {
+    section .menuIcon:hover, .drawerMenuContainer > a:hover, .nightMode:hover  {
         transition: all 200ms ease;
     }
-    drawer .menuIcon:hover, .drawerMenuContainer > a:hover, .nightMode:hover  {
+    section .menuIcon:hover, .drawerMenuContainer > a:hover, .nightMode:hover  {
         color: var(--grayish-violet);
     }
     .drawerActive {
@@ -140,6 +142,8 @@ nav {
     .drawerMenuContainer > a, .nightMode {
         cursor: pointer;
         padding: 20px;
+
+        text-transform: capitalize;
     }
     .drawerMenuContainer > a {
         margin-bottom: 30px;

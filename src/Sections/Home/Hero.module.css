@@ -4,6 +4,8 @@
     box-sizing: border-box;
 
     background: var(--white);
+
+    padding-top: var(--navbar-height);
 }
 .heroWrapper {
     min-height: 100vh;
@@ -19,6 +21,8 @@
     position: relative;
     z-index: 1;
     max-width: 800px;
+
+    padding-bottom: var(--navbar-height);
 }
 .textContainer > p {
     margin: 20px 0 30px 0;

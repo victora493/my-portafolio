@@ -100,7 +100,7 @@ p {
 /* svg */
 svg {
   /* color: var(--primary-color); */
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 @media (max-width: 800px) {
