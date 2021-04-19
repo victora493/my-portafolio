@@ -49,11 +49,13 @@
     .content {
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 0;
     }
     .imgContainer {
         height: 300px;
         width: 100%;
+
+        margin-bottom: 2rem;
 
     }
     .imgContainer img {

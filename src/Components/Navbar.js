@@ -123,12 +123,12 @@ export default function Navbar() {
                     >
                         Contact
                     </Link>
-                    <div
+                    {/* <div
                         className={styles.nightMode}
                         onClick={() => setShowMenu(false)}
                     >
                         Night mode
-                    </div>
+                    </div> */}
                     <div
                         className={styles.menuIcon}
                         onClick={() => setShowMenu(false)}

@@ -3,7 +3,6 @@
     background: var(--sub-primary-color);
 }
 .content {
-    
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -59,10 +58,13 @@
     .content {
         display: flex;
         flex-direction: column;
+        grid-gap: 0;
+        gap: 0;
     }
     .contactList {
         display: grid;
         grid-template-columns: 1fr  1fr;
+        margin-bottom: 2rem;
     }
     .box {
         padding: 1.5rem;

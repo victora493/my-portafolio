@@ -16,6 +16,7 @@ input, textarea {
 
     font-size: var(--p2-font-size);
     font-family: var(--body-font-family);
+    caret-color: black;
 
     padding: 7px;
     border: 1px solid var(--divider2);

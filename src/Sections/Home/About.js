@@ -18,7 +18,7 @@ export default function About() {
                     <img src={profilePic} alt="profile-pic" />
                 </div>
                 <div className={styles.textContainer}>
-                    <h1>A little bit about me <span className='cyan' >.</span></h1>
+                    <h1>A little bit about me<span className='cyan' >.</span></h1>
                     <p>
 
                         I'm a Web Developer, I can design, create and maintain websites, using the latest industry software.
