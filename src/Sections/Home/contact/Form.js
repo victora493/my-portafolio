@@ -18,13 +18,17 @@ export default function Form({toast}) {
 
     // need to conect this two somehow
     async function sendEmail(templateParams) {
-        emailjs.send('service_zjgajro', 'template_hfop2mj', templateParams, 'user_tthIIXrCt6pokeLnLSWQB')
+        const promise = emailjs.send('service_zjgajro', 'template_hfop2mj', templateParams, 'user_tthIIXrCt6pokeLnLSWQB')
         .then((result) => {
-            toast.success('thank you! Your information was submitted correctly')
             console.log(result.text);
         }, (error) => {
-            toast.error("I'm sorry:( there was an error, please try again later")
             console.log(error.text);
+        });
+
+        toast.promise(promise, {
+            loading: 'Loading',
+            success: 'thank you! Your information was submitted correctly',
+            error: "I'm sorry:( there was an error, please try again later",
         });
     }
 
