@@ -12,6 +12,7 @@ import { IoMailOutline, IoLogoWhatsapp } from 'react-icons/io5'
 
 export default function Contact() {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
+
     const onSubmit = data => {
         console.log(data)
     };
@@ -75,7 +76,7 @@ export default function Contact() {
                     </ul>
                 </div>
                 <div className={styles.contactForm}>
-                    <form noValidate onSubmit={(e) => sendEmail(e)} className={styles.box}>
+                    <form noValidate onSubmit={handleSubmit(onSubmit)} className={styles.box}>
                         <div className={styles.row}>
                             <Input
                                 validation={

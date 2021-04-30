@@ -4,7 +4,7 @@
     border-radius: 40px;
 }
 .myBtn[data-size='md'] {
-    font-size: var(--p2-font-size);
+    font-size: var(--p-font-size);
     padding: 5px 20px;
     border-radius: 40px;
 }
