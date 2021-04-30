@@ -21,7 +21,6 @@ input, textarea {
     padding: 7px;
     border: 1px solid var(--divider2);
     
-    text-transform: capitalize;
     transition: all 200ms ease;
     
     resize: none;
