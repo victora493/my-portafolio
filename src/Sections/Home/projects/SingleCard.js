@@ -25,14 +25,17 @@ export default function SingleCard({imgDesk, imgMobile, title, description, skil
                     <h2>{title || 'no title'}</h2>
                     <p className='p2'>
                         {description || 'no description'}
-                        <br />
+                    </p>
+                    <p className='p2'>
                         <strong>Technologies used:</strong>
                     </p>
                     <ul className={styles.technologiesList}>
-                        {skillsArrShowcase.map((skill, i) => (
-                            <p>
-                                <li key={i * 20}>{skill}</li>
-                            </p>
+                        {skillsArrShowcase.map((skill, i) => (                            
+                            <li key={i * 20}>
+                                <p>
+                                    {skill}
+                                </p>
+                            </li>
                         ))}
                     </ul>
                     <div className={styles.links}>
