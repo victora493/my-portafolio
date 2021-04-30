@@ -15,7 +15,7 @@ export default function Input({name, id, validation, register, errors}) {
 
     return (
         <div className={styles.mainWrapper}>
-            <label htmlFor={name}>{validation?.required && '*'}{name}</label>
+            <label htmlFor={name}>{validation?.required && '*'}{name.split('_')[1]}</label>
             <input
                 id={id}
                 {...register(name, {required: {...validation?.required}, pattern: {...validation?.pattern}})} name={name}

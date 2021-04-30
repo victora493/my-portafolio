@@ -1,10 +1,8 @@
 import React from 'react'
 import styles from './Contact.module.css'
-
 import { useForm } from "react-hook-form";
 import toast, { Toaster } from 'react-hot-toast';
-
-// UI
+import emailjs from 'emailjs-com';
 import Input from '../../Components/UI/Input'
 import Button from '../../Components/UI/Button'
 import Textarea from '../../Components/UI/Textarea'
@@ -15,10 +13,22 @@ import { IoMailOutline, IoLogoWhatsapp } from 'react-icons/io5'
 export default function Contact() {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
-        reset()
-        toast.success('thank you! Your information was submitted correctly')
         console.log(data)
     };
+    
+    function sendEmail(e) {
+        e.preventDefault();
+        reset()
+        
+        emailjs.sendForm('service_zjgajro', 'template_hfop2mj', e.target, 'user_tthIIXrCt6pokeLnLSWQB')
+        .then((result) => {
+            toast.success('thank you! Your information was submitted correctly')
+            console.log(result.text);
+        }, (error) => {
+            toast.error("I'm sorry:( there was an error, please try again later")
+            console.log(error.text);
+        });
+    }
 
     return (
         <div id='contact' className={styles.mainWrapper}>
@@ -65,7 +75,7 @@ export default function Contact() {
                     </ul>
                 </div>
                 <div className={styles.contactForm}>
-                    <form noValidate onSubmit={handleSubmit(onSubmit)} className={styles.box}>
+                    <form noValidate onSubmit={(e) => sendEmail(e)} className={styles.box}>
                         <div className={styles.row}>
                             <Input
                                 validation={
@@ -74,7 +84,7 @@ export default function Contact() {
                                     }
                                 }
                                 errors={errors}
-                                name="name"
+                                name="from_name"
                                 register={register}
                             />
                             <Input
@@ -86,7 +96,7 @@ export default function Contact() {
                                 }
                                 register={register}
                                 errors={errors}
-                                name="email"
+                                name="user_email"
                             />
                         </div>
                         <Textarea 
