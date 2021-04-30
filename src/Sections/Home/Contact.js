@@ -16,7 +16,7 @@ export default function Contact() {
     const onSubmit = data => {
         console.log(data)
     };
-    
+    // need to conect this two somehow
     function sendEmail(e) {
         e.preventDefault();
         reset()
