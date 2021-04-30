@@ -18,8 +18,6 @@ export default function About() {
                         src={profilePic} 
                         alt="profile-pic"
                         effect="opacity"
-                        height='23vw'
-                        width='23vw'
                     />
                 </div>
                 <div className={styles.textContainer}>

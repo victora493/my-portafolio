@@ -59,16 +59,12 @@ export default function Projects() {
                                     src={pr.imgDesk}
                                     alt="deskoptMockup"
                                     effect="opacity"
-                                    // height='23vw'
-                                    // width='23vw'
                                 />
                                 <div className={styles.imgContainerMobile}>
                                     <LazyLoadImage
                                         src={pr.imgMobile}
                                          alt="mobilepMockup"
                                         effect="opacity"
-                                        height='340px'
-                                        width='200px'
                                     />
                                 </div>
                             </div>

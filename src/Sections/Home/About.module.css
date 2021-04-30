@@ -25,7 +25,7 @@
 
     background: var(--primary-color);
 }
-.imgContainer img {
+.imgContainer span img, .imgContainer > span {
     object-fit: cover;
     height: 100%;
     width: 100%;
