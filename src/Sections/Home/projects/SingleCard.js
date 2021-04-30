@@ -1,5 +1,7 @@
 import React from 'react'
-import styles from 'SingleCard.module.css'
+import styles from './Projects.module.css'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 export default function SingleCard({imgDesk, imgMobile, title, description, skillsArrShowcase, linksArr}) {
     return (
@@ -34,7 +36,7 @@ export default function SingleCard({imgDesk, imgMobile, title, description, skil
                         ))}
                     </ul>
                     <div className={styles.links}>
-                    {linksArrs.map((link, i) => (
+                    {linksArr.map((link, i) => (
                         <a key={i * 3} target='_blank' href={link}>
                             {i === 0 ? 'Visit project →' : 'View code →'}
                         </a>

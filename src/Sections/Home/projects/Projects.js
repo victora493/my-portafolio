@@ -1,14 +1,6 @@
 import React from 'react'
 import styles from './Projects.module.css'
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/opacity.css';
-import pr1DeskoptMockup from '../../Assets/mfa-about-deskopt-mockup.png'
-import pr1MobileMockup from '../../Assets/mfa-about-mobile-mockup.png'
-import pr2DeskoptMockup from '../../Assets/psoa-deskopt-mockup.png'
-import pr2MobileMockup from '../../Assets/psoa-mobile-mockup.png'
-import pr3DeskoptMockup from '../../Assets/spacex-deskopt-mockup.png'
-import pr3MobileMockup from '../../Assets/spacex-mobile-mockup.png'
-import projectsArr from '../../utils/projectsArr'
+import { projectsArr } from '../../../utils/projectsArr'
 import SingleCard from './SingleCard'
 
 export default function Projects() {
@@ -26,7 +18,7 @@ export default function Projects() {
                         <SingleCard
                             key={i}
                             imgDesk={pr.imgDesk}
-                            imgMobile={pr.imgDesk}
+                            imgMobile={pr.imgMobile}
                             title={pr.title}
                             description={pr.desc.mainDesc}
                             skillsArrShowcase={pr.desc.skills}

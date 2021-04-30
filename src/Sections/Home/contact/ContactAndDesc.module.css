@@ -1,0 +1,60 @@
+.mainWrapper {
+    position: relative;
+    background: var(--sub-primary-color);
+}
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.contactInfo {
+    color: #fff;
+
+}
+.contactInfo > h1, .contactInfo > p {
+    color: inherit;
+}
+.contactList {
+    list-style-type: none;
+    margin-top: 20px;
+}
+.contactList > li a {
+    display: flex;
+    align-items: center;
+    
+    font-size: var(--p-font-size);
+    line-height: var(--p-line-height);
+}
+.contactList > li a:hover {
+    color: var(--primary-color);
+}
+.contactList > li:not(:first-child) {
+    margin-top: 20px;
+}
+.contactList> li  svg {
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+@media (max-width: 800px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 0;
+        gap: 0;
+    }
+    .contactList {
+        display: grid;
+        grid-template-columns: 1fr  1fr;
+        margin-bottom: 2rem;
+    }
+    .contactList {
+        display: flex;
+        flex-direction: column;
+    }
+    .contactList > li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

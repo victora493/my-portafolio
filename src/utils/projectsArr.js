@@ -1,4 +1,10 @@
 import React from 'react'
+import pr1DeskoptMockup from '../Assets/mfa-about-deskopt-mockup.png'
+import pr1MobileMockup from '../Assets/mfa-about-mobile-mockup.png'
+import pr2DeskoptMockup from '../Assets/psoa-deskopt-mockup.png'
+import pr2MobileMockup from '../Assets/psoa-mobile-mockup.png'
+import pr3DeskoptMockup from '../Assets/spacex-deskopt-mockup.png'
+import pr3MobileMockup from '../Assets/spacex-mobile-mockup.png'
 
 export const projectsArr = [
         {
