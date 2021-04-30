@@ -9,7 +9,7 @@ export default function Textarea({name, id, validation, register}) {
             <textarea
                 id={id}
                 {...register(name)} name={name} cols="10" rows="5" 
-                placeholder="Please Enter your Message here">
+            >
             </textarea>
         </div>
     )

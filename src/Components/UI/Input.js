@@ -18,7 +18,7 @@ export default function Input({name, id, validation, register, errors}) {
             <label htmlFor={name}>{validation?.required && '*'}{name}</label>
             <input
                 id={id}
-                {...register(name, {required: {...validation?.required}, pattern: {...validation?.pattern}})} name={name} placeholder={`Please Enter your ${name}`} 
+                {...register(name, {required: {...validation?.required}, pattern: {...validation?.pattern}})} name={name}
                 type="text" 
             />
             <p className={styles.errorMessage}>{errors && errors[name]?.message}</p>

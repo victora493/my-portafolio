@@ -1,9 +1,8 @@
 import React from 'react'
 import styles from './Hero.module.css'
 import Button from '../../Components/UI/Button'
-
 import { Link, animateScroll as scroll } from "react-scroll";
-
+import { motion } from "framer-motion"
 import heroImg from '../../Assets/developer-activity-animate.svg'
 import portafolio from '../../Assets/Cv_Victor_Final_(english).pdf'
 
@@ -11,8 +10,13 @@ export default function Hero() {
     return (
         <div className={styles.mainWrapper}>
             <div className={styles.heroWrapper + ' ' + 'max-width'}>
-                <div className={styles.textContainer}>
-                    <h1 className='header' >Hello, my name is Victor<span className='cyan'>.</span></h1>
+                <motion.div 
+                    className={styles.textContainer}
+                    initial={{opacity: 0, y: -100}}
+                    animate={{opacity: 1, y: 0}}
+                    transition={{duration: 1}}
+                >
+                    <h1 className='header' >Hello, my name is Victor <span className='cyan'>.</span></h1>
                     <p className='sub-header' >
                         I'm a frontend developer from <span className='green'>Me</span>xi<span className='red' >co</span>,
                         and building websites is my passion.
@@ -28,7 +32,7 @@ export default function Hero() {
                         </Link>
                         <a href={portafolio} download>Download Cv</a>
                     </div>
-                </div>
+                </motion.div>
             </div>
             <div className={styles.heroImgContainer}>
                 <img src={heroImg} alt="hero-img" />
