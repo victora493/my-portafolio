@@ -5,7 +5,7 @@ import Button from '../../Components/UI/Button'
 import { Link, animateScroll as scroll } from "react-scroll";
 
 import heroImg from '../../Assets/developer-activity-animate.svg'
-import portafolio from '../../Assets/Cv Victor final2.0 (english).pdf'
+import portafolio from '../../Assets/Cv_Victor_Final_(english).pdf'
 
 export default function Hero() {
     return (
