@@ -12,15 +12,15 @@ export default function Contact() {
                     // Define default options
                     className: '',
                     style: {
-                    margin: '60px',
-                    // background: '#363636',
-                    // color: '#fff',
-                    zIndex: 1,
+                        margin: '60px',
+                        // background: '#363636',
+                        // color: '#fff',
+                        zIndex: 1,
                     },
-                    duration: 6000,
+                    duration: 4000,
                     // Default options for specific types
                     error: {
-                    duration: 8000,
+                        duration: 5000,
                     },
                 }}
             />

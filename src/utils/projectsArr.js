@@ -25,7 +25,7 @@ export const projectsArr = [
                 mainDesc: "I was in charge of the front end. This project was exciting because this website design was made by me using my experience creating both good and efficient UI/UX and also beacuse when implementing the users account section I had to implement a lot of logic.",
                 skills: ['html, css', 'Javascript', 'React', 'Firebase', 'NodeJS']
             },
-            links: ['https://art-of-the-portrait.netlify.app/']
+            links: ['https://psoa2021.com/']
         },
         {
             imgDesk: pr3DeskoptMockup,
