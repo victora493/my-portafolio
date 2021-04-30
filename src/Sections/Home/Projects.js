@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from './Projects.module.css'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 import pr1DeskoptMockup from '../../Assets/mfa-about-deskopt-mockup.png'
 import pr1MobileMockup from '../../Assets/mfa-about-mobile-mockup.png'
 import pr2DeskoptMockup from '../../Assets/psoa-deskopt-mockup.png'
@@ -53,9 +55,21 @@ export default function Projects() {
                     {projectsArr.map((pr, i) => (
                         <div key={i} className={styles.cardContaier}>
                             <div className={styles.imgContainer}>
-                                <img src={pr.imgDesk} alt="deskoptMockup" />
+                                <LazyLoadImage
+                                    src={pr.imgDesk}
+                                    alt="deskoptMockup"
+                                    effect="opacity"
+                                    // height='23vw'
+                                    // width='23vw'
+                                />
                                 <div className={styles.imgContainerMobile}>
-                                    <img src={pr.imgMobile} alt="mobilepMockup" />
+                                    <LazyLoadImage
+                                        src={pr.imgMobile}
+                                         alt="mobilepMockup"
+                                        effect="opacity"
+                                        height='340px'
+                                        width='200px'
+                                    />
                                 </div>
                             </div>
                             <div className={styles.textContent}>

@@ -1,10 +1,9 @@
 import React from 'react'
 import styles from './About.module.css'
 import profilePic from '../../Assets/profile_picture.jpg'
-
-// components
 import DividerSection from '../../Components/UI/DividerSection'
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 import { SiHtml5 } from 'react-icons/si'
 import { SiCss3 } from 'react-icons/si'
 import { SiJavascript } from 'react-icons/si'
@@ -15,7 +14,13 @@ export default function About() {
         <div id='about' className={styles.mainWrapper}>
             <div className={styles.content + ' ' + 'max-width-pad'}>
                 <div className={styles.imgContainer}>
-                    <img src={profilePic} alt="profile-pic" />
+                    <LazyLoadImage
+                        src={profilePic} 
+                        alt="profile-pic"
+                        effect="opacity"
+                        height='23vw'
+                        width='23vw'
+                    />
                 </div>
                 <div className={styles.textContainer}>
                     <h1>A little bit about me<span className='cyan' >.</span></h1>
