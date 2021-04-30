@@ -28,8 +28,10 @@
 
 .imgContainer {
     position: relative;
-    max-height: 385px;
+    max-height: 485px;
     max-width: 650px;
+
+    margin: 0 auto;
 
     grid-area: img;
 }
@@ -110,15 +112,26 @@
         right: -0px;
         bottom: -35px;
     }
-
+    
     .textContent > p > ul {
         text-align: center;
     }
     .textContent > h2::after {
         margin: 0 auto;
     }
-
+    
     .textContent .links > a {
         text-align: center;
     }
+}
+
+@media (max-width: 340px) {
+    .imgContainerMobile {
+        position: absolute;
+        height: 200px;
+        width: 80px;
+        right: -0px;
+        bottom: -35px;
+    }
+    
 }
