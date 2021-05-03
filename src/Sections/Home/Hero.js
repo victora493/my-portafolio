@@ -6,22 +6,38 @@ import { motion } from "framer-motion"
 import heroImg from '../../Assets/developer-activity-animate.svg'
 import portafolio from '../../Assets/Cv_Victor_Final_(english).pdf'
 
+import { fadeUp2 } from '../../animations/framerMotionAnimation'
+
 export default function Hero() {
     return (
         <div className={styles.mainWrapper}>
             <div className={styles.heroWrapper + ' ' + 'max-width'}>
-                <motion.div 
+                <div 
                     className={styles.textContainer}
-                    initial={{opacity: 0, y: -100}}
-                    animate={{opacity: 1, y: 0}}
-                    transition={{duration: 1}}
                 >
-                    <h1 className='header' >Hello, my name is Victor <span className='cyan'>.</span></h1>
-                    <p className='sub-header' >
+                    <motion.h1 
+                        className='header'
+                        variants={fadeUp2}
+                        initial='hidden'
+                        animate='visible'
+                    >
+                        Hello, my name is Victor<span className='cyan'>.</span>
+                    </motion.h1>
+                    <motion.p 
+                        className='sub-header'
+                        variants={fadeUp2}
+                        initial='hidden'
+                        animate='visible'
+                    >
                         I'm a frontend developer from <span className='green'>Me</span>xi<span className='red' >co</span>,
                         and building websites is my passion.
-                    </p>
-                    <div className={styles.buttons}>
+                    </motion.p>
+                    <motion.div 
+                        className={styles.buttons}
+                        variants={fadeUp2}
+                        initial='hidden'
+                        animate='visible'
+                    >
                         <Link
                             to="contact"
                             smooth={true}
@@ -31,8 +47,8 @@ export default function Hero() {
                             <Button size='lg' label='Contact me'></Button>
                         </Link>
                         <a href={portafolio} download>Download Cv</a>
-                    </div>
-                </motion.div>
+                    </motion.div>
+                </div>
             </div>
             <div className={styles.heroImgContainer}>
                 <img src={heroImg} alt="hero-img" />

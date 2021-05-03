@@ -56,7 +56,7 @@
 }
 
 .textContent {
-    padding: 30px;
+    padding: 20px;
     grid-area: text;
 
     display: flex;
