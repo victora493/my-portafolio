@@ -28,7 +28,7 @@ export default function About() {
 }
 
 function ImgComponent() {
-    const [ ref, inView] = useInView({ rootMargin: '-180px'})
+    const [ ref, inView] = useInView({ rootMargin: '-60px'})
     return (
         <motion.div 
             className={styles.imgContainer}
@@ -47,11 +47,11 @@ function ImgComponent() {
 }
 
 function InfoComponent() {
-    const [ ref, inView] = useInView({ rootMargin: '180px'})
+    const [ ref, inView] = useInView({ rootMargin: '60px'})
     return (
         <motion.div
-            ref={ref}
             className={styles.textContainer}
+            ref={ref}
             variants={fadeUp1}
             initial='hidden'
             animate={inView && 'visible'}

@@ -5,8 +5,13 @@ import emailjs from 'emailjs-com';
 import Input from '../../../Components/UI/Input'
 import Button from '../../../Components/UI/Button'
 import Textarea from '../../../Components/UI/Textarea'
+// for animations
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import { fadeUp1 } from '../../../animations/framerMotionAnimation'
 
 export default function Form({toast}) {
+    const [ ref, inView] = useInView({ rootMargin: '60px'})
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     const onSubmit = data => {
@@ -34,7 +39,13 @@ export default function Form({toast}) {
 
     return (
         <>
-            <div className={styles.contactForm}>
+            <motion.div 
+                className={styles.contactForm}
+                ref={ref}
+                variants={fadeUp1}
+                initial='hidden'
+                animate={inView && 'visible'}
+            >
                 <form noValidate onSubmit={handleSubmit(onSubmit)} className={styles.box}>
                     <div className={styles.row}>
                         <Input
@@ -75,7 +86,7 @@ export default function Form({toast}) {
                     >
                     </Button>
                 </form>
-            </div>
+            </motion.div>
         </>
     )
 }

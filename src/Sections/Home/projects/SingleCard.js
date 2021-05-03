@@ -2,11 +2,22 @@ import React from 'react'
 import styles from './Projects.module.css'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
+// for animations
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import { fadeUp1 } from '../../../animations/framerMotionAnimation'
 
 export default function SingleCard({imgDesk, imgMobile, title, description, skillsArrShowcase, linksArr}) {
+    const [ ref, inView] = useInView({ rootMargin: '0px'})
     return (
         <>
-            <div className={styles.cardContaier}>
+            <motion.div 
+                className={styles.cardContaier}
+                ref={ref}
+                variants={fadeUp1}
+                initial='hidden'
+                animate={inView && 'visible'}
+            >
                 <div className={styles.imgContainer}>
                     <LazyLoadImage
                         src={imgDesk}
@@ -46,7 +57,7 @@ export default function SingleCard({imgDesk, imgMobile, title, description, skil
                     ))}
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }

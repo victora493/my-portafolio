@@ -2,11 +2,22 @@ import React from 'react'
 import styles from './ContactAndDesc.module.css'
 // icons
 import { IoMailOutline, IoLogoWhatsapp } from 'react-icons/io5'
+// for animations
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import { fadeDown1 } from '../../../animations/framerMotionAnimation'
 
 export default function ContactDesc() {
+    const [ ref, inView] = useInView({ rootMargin: '-60px'})
     return (
         <>
-          <div className={styles.contactInfo}>
+            <motion.div 
+                className={styles.contactInfo}
+                ref={ref}
+                variants={fadeDown1}
+                initial='hidden'
+                animate={inView && 'visible'}
+            >
                 <h1>Get in touch!</h1>
                 <p className='subtitle' >
                     Have an inquiry or a question for me? Please fill out the form to contact me and you'll 
@@ -29,7 +40,7 @@ export default function ContactDesc() {
                         {/* mail */}
                         {/* celphone */}
                 </ul>
-            </div>  
+            </motion.div>  
         </>
     )
 }
