@@ -8,6 +8,7 @@ import { SiHtml5 } from 'react-icons/si'
 import { SiCss3 } from 'react-icons/si'
 import { SiJavascript } from 'react-icons/si'
 import { SiReact } from 'react-icons/si'
+import { FaGitAlt } from 'react-icons/fa'
 
 export default function About() {
     return (
@@ -25,18 +26,19 @@ export default function About() {
                     <p>
 
                         I'm a Web Developer, I can design, create and maintain websites, using the latest industry software.
-                        I've worked with startups and institutions providing an outstanding user experience.
+                        I've worked with startups and institutions providing an outstanding user experience. 
+                        Creating accessible websites that look great on any screen.
                         <br /> 
-                        {/* I'm 22 years old and currently located in Mexico. <br /> */}
-                        I'd say developing has become my passion throughout this time and the more 
-                        challenging a website the more I enjoy developing that website. <br />
+                        {/* I'd say developing has become my passion throughout this time and the more 
+                        challenging a website the more I enjoy developing that website. <br /> */}
                         Some of the technologies I dominate include:
-                        HTML5, CSS3, JavaScript and React.js.
+                        HTML5, CSS3, JavaScript, Git and React.js.
                     </p>
                     <div className={styles.iconsContainer}>
                         <SiHtml5 />
                         <SiCss3 />
                         <SiJavascript />
+                        <FaGitAlt />                   
                         <SiReact />                        
                     </div>
                 </div>
