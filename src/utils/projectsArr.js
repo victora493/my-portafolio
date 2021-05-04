@@ -35,6 +35,6 @@ export const projectsArr = [
                 mainDesc: 'This webiste was made to display the spacex lauches by fetching the data using a rest API. It was made only by me with the purpose of practicing my skills. It includes some basic features such as search, pagination, loading state, error handling and it is responsive.',
                 skills: ['html, css', 'Javascript', 'React']
             },
-            links: ['https://victortestspacex.netlify.app/', 'https://github.com/smartia-tech/frontend-dev-test/pull/17']
+            links: ['https://victortestspacex.netlify.app/', 'https://github.com/victora493/space-x-launches-record']
         },
     ]
