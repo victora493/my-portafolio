@@ -25,7 +25,7 @@ nav {
     background: transparent;
 }
 .navActive {
-    background: var(--white-faded);
+    background: var(--white);
     box-shadow: 0px .5px 8px var(--divider2);
     padding: 0 2%;
 }
