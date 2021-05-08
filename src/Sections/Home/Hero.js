@@ -4,7 +4,7 @@ import Button from '../../Components/UI/Button'
 import { Link, animateScroll as scroll } from "react-scroll";
 import { motion } from "framer-motion"
 import heroImg from '../../Assets/developer-activity-animate.svg'
-import portafolio from '../../Assets/Cv_Victor_Final_(english).pdf'
+import portafolio from '../../Assets/Cv_Victor_Obeso.pdf'
 
 import { fadeUp2 } from '../../animations/framerMotionAnimation'
 
