@@ -66,7 +66,7 @@ function InfoComponent() {
                 {/* I'd say developing has become my passion throughout this time and the more 
                 challenging a website the more I enjoy developing that website. <br /> */}
                 Some of the technologies I dominate include:
-                HTML5, CSS3, JavaScript, Git and React.js.
+                HTML5, CSS3, JavaScript, Git and React.JS.
             </p>
             <motion.div 
                 className={styles.iconsContainer}

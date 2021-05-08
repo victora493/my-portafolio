@@ -12,7 +12,7 @@ export const projectsArr = [
             imgMobile: pr1MobileMockup,
             title: 'Online Art School',
             desc: {
-                mainDesc: 'I was in charge of the front end. It was an interesting project since i developed a lot of skills undestanding what is needed for a full stack webpage, and also I learned how to work better as a team.',
+                mainDesc: 'I was in charge of the front end(with a team). It was an interesting project since I developed a lot of skills understanding what is needed for a full stack webpage and also I improved my teamwork skills.',
                 skills: ['html, css', 'Javascript', 'Lit element', 'Firebase', 'NodeJS']
             },
             links: ['https://mfa.studio/']
@@ -22,8 +22,8 @@ export const projectsArr = [
             imgMobile: pr2MobileMockup,
             title: 'Online Art Live Conference',
             desc: {
-                mainDesc: "I was in charge of the front end. This project was exciting because this website design was made by me using my experience creating both good and efficient UI/UX and also beacuse when implementing the users account section I had to implement a lot of logic.",
-                skills: ['html, css', 'Javascript', 'React', 'Firebase', 'NodeJS']
+                mainDesc: "I was in charge of the front end(with a team). This project was exciting because the design was made by me taking into account all of the users' needs and creating an interface that reinforces consistency and beacuse I had to implement a lot of logic of the page such as in the account, reminders for users and more.",
+                skills: ['html, css', 'Javascript', 'React.JS', 'Firebase', 'NodeJS']
             },
             links: ['https://psoa2021.com/']
         },
@@ -32,8 +32,8 @@ export const projectsArr = [
             imgMobile: pr3MobileMockup,
             title: 'SpaceX Launches Record',
             desc: {
-                mainDesc: 'This webiste was made to display the spacex lauches by fetching the data using a rest API. It was made only by me with the purpose of practicing my skills. It includes some basic features such as search, pagination, loading state, error handling and it is responsive.',
-                skills: ['html, css', 'Javascript', 'React']
+                mainDesc: 'This website was made only by me with the purpose of practicing my skills. It displays all the spacex launches using a rest API. It includes some basic features such as search, pagination, loading state, error handling and it is responsive.',
+                skills: ['html, css', 'Javascript', 'React.JS']
             },
             links: ['https://victortestspacex.netlify.app/', 'https://github.com/victora493/space-x-launches-record']
         },
