@@ -10,7 +10,7 @@ export default function Projects() {
             <div className={styles.content + ' ' + 'max-width-pad'}>
                 <h1>Featured Projects:</h1>
                 <p className='subtitle' >
-                    These are some of my featured projects I've wroked on in the past. Most of them were made with a team of progammers and some were made only by me. 
+                    These are some of my featured projects I've worked on in the past. Most of them were made with a team of progammers and some were made only by me. 
                 </p>
                 <div className={styles.proyectsContainer}>
                     {/* single card */}

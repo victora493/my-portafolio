@@ -3,7 +3,7 @@ import styles from './Footer.module.css';
 
 import myLogo from '../Assets/my_logo.png'
 // icons
-import { IoMailOutline, IoCallOutline, IoLogoGithub, IoLogoFacebook, IoLogoInstagram } from 'react-icons/io5'
+import { IoMailOutline, IoCallOutline, IoLogoGithub, IoLogoFacebook, IoLogoLinkedin } from 'react-icons/io5'
 
 export default function Footer() {
   return (
@@ -73,9 +73,9 @@ export default function Footer() {
           <div className={styles.singleIconContainer}>
             <a
               target="_blank"
-              href="https://www.instagram.com/victor_arreola1/?hl=es"
+              href="https://www.linkedin.com/in/victor-obeso-97554b124/"
             >
-              <IoLogoInstagram />
+              <IoLogoLinkedin />
             </a>
           </div>
           <div className={styles.singleIconContainer}>
