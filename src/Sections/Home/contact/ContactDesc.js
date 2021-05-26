@@ -20,9 +20,9 @@ export default function ContactDesc() {
             >
                 <h1>Get in touch!</h1>
                 <p className='subtitle' >
-                    Have an inquiry or a question for me? Please fill out the form to contact me and you'll 
-                    receive an answer as soon as posible. <br />
-                    Currently I'm open to job opportunities or freelance projects.  <br />
+                    Have an inquiry or a question for me? Please fill out the form to contact me and you'll receive an answer as soon as 
+                    possible. <br />
+                    Currently, I'm open to job opportunities or freelance projects.<br />
                 </p>
                 <ul className={styles.contactList}>
                         <li>

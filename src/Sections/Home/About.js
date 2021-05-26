@@ -59,14 +59,13 @@ function InfoComponent() {
             <h1>A little bit about me<span className='cyan' >.</span></h1>
             <p>
 
-                I'm a Web Developer, I can design, create and maintain websites, using the latest industry software.
+                I'm a Web Developer, I can design, create and maintain websites, using the latest industry software. 
                 I've worked with startups and institutions providing an outstanding user experience. 
                 Creating accessible websites that look great on any screen.
                 <br /> 
                 {/* I'd say developing has become my passion throughout this time and the more 
                 challenging a website the more I enjoy developing that website. <br /> */}
-                Some of the technologies I dominate include:
-                HTML5, CSS3, JavaScript, Git and React.JS.
+                Some of the technologies I dominate include HTML5, CSS3, JavaScript, Git, and React.JS.
             </p>
             <motion.div 
                 className={styles.iconsContainer}
